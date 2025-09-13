@@ -1,27 +1,32 @@
-# Automated Resume Screening Tool (Demo) - JD Upload Enabled
+# 📝 Automated Resume Screening Tool
 
-## What it is
-A simple Flask web app that accepts resume files (PDF/DOCX/TXT) and a Job Description file (PDF/DOCX) or pasted JD,
-extracts text, extracts skills using fuzzy matching, compares against a job description (JD) pasted by the user,
-and produces a ranked shortlist with match scores.
+A Flask-based web application that automates resume shortlisting for recruiters.  
+Upload resumes (PDF/DOCX/TXT) and a Job Description (JD as text or PDF/DOCX), and the system will:
 
-## How to run (local)
-1. Create and activate a Python 3.10+ virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # on Windows use `venv\Scripts\activate`
-   ```
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   python -m spacy download en_core_web_sm
-   ```
-3. Run the app:
-   ```bash
-   python app.py
-   ```
-4. Open `http://127.0.0.1:5000` in your browser.
+- ✅ Parse documents using NLP  
+- ✅ Extract and match technical skills (fuzzy matching with RapidFuzz + spaCy)  
+- ✅ Compute a 0–100 match score  
+- ✅ Generate a ranked shortlist with matched skills highlighted  
 
-## Notes
-- The app accepts JD as pasted text or as an uploaded PDF/DOCX file.
-- For scanned (image) PDFs, OCR support is not included by default.
+---
+
+## 🚀 Features
+- Upload **multiple resumes** (PDF/DOCX/TXT) at once  
+- Upload JD as **text or file (PDF/DOCX)**  
+- Extract skills using **spaCy + RapidFuzz**  
+- Compute a weighted **match score** (Skills 80%, Keywords 10%, Experience 10%)  
+- View results in a **ranked Bootstrap table**  
+- Extendable for **semantic similarity** with `sentence-transformers`  
+
+---
+
+## 🛠️ Technologies Used
+- **Backend:** Python, Flask  
+- **NLP & Parsing:** spaCy, pdfplumber, docx2txt, RapidFuzz  
+- **Database (optional):** SQLite  
+- **Frontend:** HTML, CSS, Bootstrap  
+- **Optional (advanced):** scikit-learn (TF-IDF), sentence-transformers (semantic matching)  
+
+---
+
+## 📂 Project Structure
