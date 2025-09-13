@@ -1,0 +1,6 @@
+We are looking for a System Engineer with hands-on experience in:
+- Python, SQL (MySQL/PostgreSQL)
+- Linux, Bash scripting
+- Docker, Kubernetes, AWS
+- REST API, Git
+Nice to have: React, Node.js, CI/CD pipelines

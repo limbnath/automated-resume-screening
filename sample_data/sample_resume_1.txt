@@ -1,0 +1,4 @@
+Name: Rahul Sharma
+Email: rahul@example.com
+Summary: Python developer with experience in MySQL, Docker and REST APIs.
+Skills: Python, MySQL, Docker, REST API, Git, Linux

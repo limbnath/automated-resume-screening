@@ -1,0 +1,8 @@
+Flask
+pdfplumber
+python-docx
+docx2txt
+spacy
+rapidfuzz
+scikit-learn
+sentence-transformers
